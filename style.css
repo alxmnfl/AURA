@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: monospace;
+  position: relative;
+}
+header {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem 18rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.logo {
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.nav-links {
+  margin-left: 30px;
+}
+.nav-links ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-links ul a {
+  text-decoration: none;
+  color: grey;
+  opacity: 0.8;
+}
+.nav-links ul a:hover {
+  color: black;
+  opacity: 1;
+  transition: 0.3s;
+}
+.btn {
+  color: white;
+  background-color: black;
+
+  border: 2px solid black;
+  border-radius: 30px;
+
+  padding: 10px 20px;
+  margin-left: auto;
+}
+.btn:hover {
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+main {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  background: radial-gradient(
+    circle at 45% 55%,
+    #3a2818 0%,
+    #17130f 25%,
+    #0f0f0e 55%,
+    #0f0f0e 100%
+  );
+  background-color: #0f0f0e;
+
+  height: 100vh;
+  width: auto;
+}
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 500px;
+  height: 500px;
+}
+.badge {
+  color: grey;
+  background-color: black;
+  opacity: 0.7;
+
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+.span-header {
+  line-height: 2rem;
+  font-size: 30px;
+}
+.span-header h1:first-child span {
+  color: white;
+  font-weight: bold;
+}
+.span-header h1:nth-child(2) span {
+  color: rgb(214, 104, 0);
+  font-weight: bold;
+}
+.span-header,
+.left-content h1 {
+  margin: 2rem 0;
+}
+.left-para {
+  color: rgb(218, 213, 213);
+  opacity: 0.7;
+  line-height: 1.5rem;
+  width: 400px;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+.buy,
+.explore {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.buy {
+  color: black;
+  background-color: rgb(214, 104, 0);
+  border: 1px solid rgb(214, 104, 0);
+}
+.explore {
+  color: white;
+  background-color: transparent;
+  border: 1px solid grey;
+}
+.buy:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.explore:hover {
+  color: white;
+  cursor: pointer;
+  background-color: grey;
+  border: 1px solid white;
+
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.right-panel img {
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+}
